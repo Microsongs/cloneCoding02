@@ -1,67 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Chats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--아이콘 가져오기 = fontawesome 사용-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="main.js"></script>
-</head>
-<body>
-    <header>
-        <!--맨 윗부분 상태바-->
-        <div class="header__top">
-            <div class="header__column">
-                <!--plane icon 및 wifi incon-->
-                <i class="fas fa-plane"></i>
-                <i class="fas fa-wifi"></i>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chats</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--아이콘 가져오기 = fontawesome 사용-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--맨 윗부분 상태바-->
+            <div class="header__top">
+                <div class="header__column">
+                    <!--plane icon 및 wifi incon-->
+                    <i class="fas fa-plane"></i>
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <div class="header__column">
+                    <span class="header__time">18:38</span>
+                </div>
+                <div class="header__column">
+                    <!--moon icon-->
+                    <!--bluetooth icon-->
+                    <i class="far fa-moon"></i>
+                    <i class="fab fa-bluetooth-b"></i>
+                    <span class="header__battery">
+                    <!-- barrery icon-->
+                    66% 
+                    <i class="fas fa-battery-three-quarters"></i>
+                    </span>
+                </div>
             </div>
-            <div class="header__column">
-                <span class="header__time">18:38</span>
+            <!--카카오톡 맨 윗부분-->
+            <div class="header__bottom">
+                <div class="header__column">
+                    <span class="header__text">Edit</span>
+                </div>
+                <div class="header__column">
+                    <span class="header__text">
+                        채팅방 <i class="fas fa-caret-down"></i>
+                    </span>
+                </div>
             </div>
-            <div class="header__column">
-                <!--moon icon-->
-                <!--bluetooth icon-->
-                <i class="far fa-moon"></i>
-                <i class="fab fa-bluetooth-b"></i>
-                <span class="header__battery">
-                 <!-- barrery icon-->
-                 66% 
-                 <i class="fas fa-battery-three-quarters"></i>
-                </span>
+        </header>
+
+        <!--채팅 목록-->
+        <main class="chats">
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="검색"/>
+            </div> 
+            <!--채팅 방 리스트-->
+            <ul class="chats__list">
+                <!--li는 각각의 채팅방-->
+                <li class="chats__chat">
+                    <!--채팅 내용-->
+                    <div class="chat__content">
+                        <img src="images/avatar.jpg" width=300 height=300>
+                        <div class="chat__preview">
+                            <h3 class="chats__user">라이언</h3>
+                            <span class="chats__last-message">안녕! 테스트 메세지야</span>
+                        </div>
+                    </div>   
+                    <!--채팅 시간-->
+                    <span class="chat__date-time">
+                        15:55
+                    </span>   
+                </li>
+                <!--채팅방2-->
+                <!--li는 각각의 채팅방-->
+                <li class="chats__chat">
+                    <!--채팅 내용-->
+                    <div class="chat__content">
+                        <img src="images/avatar.jpg" width=300 height=300>
+                        <div class="chat__preview">
+                            <h3 class="chats__user">카카오톡</h3>
+                            <span class="chats__last-message">카카오톡 PC버전에서 로그인하였습니다.</span>
+                        </div>
+                    </div>   
+                    <!--채팅 시간-->
+                    <span class="chat__date-time">
+                        7월 20일
+                    </span>   
+                </li>
+            </ul>
+
+            <!--채팅방 추가-->
+            <div class="chat-btn">
+                <i class="fa fa-comment"></i>
             </div>
-        </div>
-        <!--카카오톡 맨 윗부분-->
-        <div class="header__bottom">
-            <div class="header__column">
-                <span class="header__text">Edit</span>
-            </div>
-            <div class="header__column">
-                <span class="header__text">
-                    채팅방 <i class="fas fa-caret-down"></i>
-                </span>
-            </div>
-        </div>
-    </header>
-    <nav classs="tab-bar">
-        <a href="index.html" class="tab-bar__tab">
-            <i class="fa fa-user"></i>
-            <span class="tab-bar__title">친구</span>
-        </a>
-        <a href="chats.html" class="tab-bar__tab  tab-bar__tab-selected">
-            <i class="fa fa-comment"></i>
-            <span class="tab-bar__title">채팅방</span>
-        </a>
-        <a href="find.html" class="tab-bar__tab">
-            <i class="fa fa-search"></i>
-            <span class="tab-bar__title">찾기</span>
-        </a>
-        <a href="more.html" class="tab-bar__tab">
-                <i class="fas fa-ellipsis-h"></i>
-                <span class="tab-bar__title">더 보기</span>
-        </a>
-    </nav>
-</body>
+        </main>
+
+        <nav classs="tab-bar">
+            <a href="index.html" class="tab-bar__tab">
+                <i class="fa fa-user"></i>
+                <span class="tab-bar__title">친구</span>
+            </a>
+            <a href="chats.html" class="tab-bar__tab  tab-bar__tab-selected">
+                <i class="fa fa-comment"></i>
+                <span class="tab-bar__title">채팅방</span>
+            </a>
+            <a href="find.html" class="tab-bar__tab">
+                <i class="fa fa-search"></i>
+                <span class="tab-bar__title">찾기</span>
+            </a>
+            <a href="more.html" class="tab-bar__tab">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span class="tab-bar__title">더 보기</span>
+            </a>
+        </nav>
+    </body>
 </html>
