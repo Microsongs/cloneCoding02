@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline example</title>
+    <style>
+    .box{
+        background-color:red;
+        width:200px;
+        height:200px;   /*인라인에서는 쓸모없는 요소이므로 적용이 안된다.*/
+        border:1px solid black;
+        display:inline;
+        /*블록은 크기와 상관없이 옆에 있는 것을 허용하지 않음*/
+         /*인라인 블록은 서로서로 바로 옆에 있도록 할 수 있음*/
+         /*인라인은 박스의 모든 property 설정값을 지운다. = 텍스트처럼 적용된다.(인라인 = 텍스트)*/
+    }
+    .box2{
+        background-color:red;
+        width:200px;
+        height:200px;
+        border:1px solid black;
+        display:inline-block;
+    }
+    </style>
+</head>
+<body>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+</body>
+</html>
