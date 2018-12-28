@@ -1,0 +1,21 @@
+/*첫 번째 bar는 propterty이다.
+사용 방법 -> propterty-name:value;
+
+예를 들어 h1에 연결하고 싶다면
+h1{
+    property-name : value;
+    property-name : value;
+    ...
+}
+
+id는 #과 같이 사용, 클래스는 .와 같이 사용
+예를 들어 h1 태그의 hello클래스에 적용하려면
+h1 .hello{
+    property-name : value;
+}
+
+이들은 섞어서 사용할 수도 있다.
+selector (id, class, tag name){
+    property-name: value;
+}
+*/
