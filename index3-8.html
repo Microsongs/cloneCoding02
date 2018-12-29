@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가상 선택자</title>
+    <!-- pesudo selector-->
+    <style>
+        /*
+        input[type="submit"]{
+            background-color:red;
+        }
+        */
+        .container > .box{
+            background-color:purple;
+        }
+        input[required="required"]{
+            background-color:red;
+        }
+        /*서로가 형제라는 뜻*/
+        input + .box{
+            border:1px solid yellow;
+        }
+        /*input 태그의 직계 자손인 box클래스*/
+        input > .box{
+            border:1px solid yellow;
+        }
+
+        input{
+            border:1px solid yellow;
+        }
+        .box{
+            background-color:green;
+            display:block;
+            height:100px;
+            border:1px solid black;
+        }
+
+        .child{
+            width:40px;
+
+        }
+        /*마지막 차일드만 색상을 바꾸는 방법*/
+        /*괄호 안의 n번째마다 잡는다.*/
+        /*
+        .box:nth-child(3n+1){  
+            background-color:pink;
+        }
+        */
+    </style>
+    <!--가상 선택자는 태그 이름이나 클래스, id를 선택하지 않고 선택할 수 있다. -->
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box">
+            <input type="password" required="required">
+            <input type="submit" required="required">
+        </div>
+    </div>
+</body>
+</html>
