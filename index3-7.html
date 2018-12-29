@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex</title>
+
+    <style>
+    /*
+    기존의 문제점 : 각각이 마진이 다르다. 
+    자동으로 완성되는 그리드가 존재하지 않음
+    각각의 컴퓨터에서 보는 것과 다르게 출력될 것
+    고치는 방법 = flex 사용
+    */
+    html,body{
+        height:100%;
+    }
+    .father{    /*부모 박스에만 적용함*/
+        display:flex;
+        justify-content : space-between;    /*수평 적용*/
+        align-items:flex-start;     /*수직 적용*/
+        height: 100%;
+        flex-direction : column-reverse;    /*flex-direction은 기본값이 row, row로하면 수직, column으로하면 수평으로 쌓는다.*/
+        flex-wrap:wrap;
+    }
+    .box{
+        background-color:red;
+        width:200px;
+        height:200px;
+        border:1px solid black;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        color:white;
+    }
+    /*
+    부모가 플렉스 -> 칠드런들을 한번에 움직일 수 있음
+    자식이 플렉스 -> 그 안의 요소들도 움직일 수 있음
+    */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
