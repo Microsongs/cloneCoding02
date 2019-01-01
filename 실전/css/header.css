@@ -3,14 +3,21 @@
     /*
     2-8 니콜라스 답변 : Change the z-index of the header!
     Do something like z-index:9; on the CSS of the header.
-    이므로 z-index 적용*/
-    z-index:9;  
+    이므로 z-index 적용
+    2-11에서 z-index:2 적용 확인
+    */
+    z-index:2;  
     background-color:#523737;
     color:white;
     padding:5px 10px 15px 10px;
     position:fixed;
     width:100%;
     top : 0;
+}
+
+/*a 태그의 색상*/
+.top-header a{
+    color:white;
 }
 
 .top-header .header__top,

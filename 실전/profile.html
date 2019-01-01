@@ -11,7 +11,7 @@
 </head>
 <!--globals css 미적용으로 인한 대체수단-->
 <body class="body">
-    <header class = "top-header"> 
+    <header class = "top-header top-header__transparent"> 
         <!--맨 윗부분 상태바-->
         <div class="header__top">
             <div class="header__column">
@@ -49,22 +49,26 @@
 
     <main class="profile">
         <header class="profile__header">
-            <img src="images/avatar.jpg" height=200 width=200 alt="">
-            <h3 class="profile__header-title">니콜라스</h3>
-        </header>
-        <input type="text" placeholder="hello@naver.com">
-        <div class="profile__actions">
-            <div class="profile__action">
-                <span class="profile__action-circle">
-                    <i class="fa fa-comment fa-2x"></i>
-                </span>
-                <span class="profile__action-title">나의 채팅방</span>
+            <div class="profile__header-container">
+                <img src="images/avatar.jpg" height=200 width=200 alt="">
+                <h3 class="profile__header-title">니콜라스</h3>
             </div>
-            <div class="profile__action">
-                <span class="profile__action-circle">
-                    <i class="fas fa-pencil-alt fa-2x"></i>
-                </span>
-                <span class="profile__action-title">프로필 수정</span>
+        </header>
+        <div class="profile__container">
+            <input type="text" placeholder="hello@naver.com">
+            <div class="profile__actions">
+                <div class="profile__action">
+                    <span class="profile__action-circle">
+                        <i class="fa fa-comment fa-2x"></i>
+                    </span>
+                    <span class="profile__action-title">나의 채팅방</span>
+                </div>
+                <div class="profile__action">
+                    <span class="profile__action-circle">
+                        <i class="fas fa-pencil-alt fa-2x"></i>
+                    </span>
+                    <span class="profile__action-title">프로필 수정</span>
+                </div>
             </div>
         </div>
     </main>

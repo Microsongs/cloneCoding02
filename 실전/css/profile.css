@@ -1,0 +1,76 @@
+/*프로필에는 헤더가 없다.*/
+.top-header__transparent{
+    background-color: transparent;
+}
+
+.profile .profile__header{
+    height: 80vh;   /*view for height*/
+    background-image : url('https://i.ytimg.com/vi/oZ4cI0u8lNc/maxresdefault.jpg');
+    background-size:100%;
+    width:100%;
+    position:relative;
+    /*html 기본높이 상쇄*/
+    top: -60px; 
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*헤더의 컨테이너(이미지 및 이름)*/
+.profile__header .profile__header-container{
+    text-align:center;
+    position:relative;
+    bottom:-60px;
+}
+
+/*이미지*/
+.profile__header-container img{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    margin-bottom:22px;
+}
+
+/*프로필 컨테이너*/
+.profile .profile__container{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/*이메일 있는 태그*/
+.profile__container input{
+    padding:5px;
+    margin-bottom:20px;
+}
+
+/*내 채팅방 및 프로필 편집*/
+.profile__actions{
+    display:flex;
+}
+
+/*각각의 요소들*/
+.profile__action{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+/*프로필을 감싸는 원*/
+.profile__action-circle{
+    background-color: #f2f2f2;
+    padding:15px;
+    border-radius:50%;
+    color:#523737;
+    margin-bottom:15px;
+}
+
+/*액션 타이틀의 폰트*/
+.profile__action-title{
+    font-size:12px;
+    font-weight:600;
+}
