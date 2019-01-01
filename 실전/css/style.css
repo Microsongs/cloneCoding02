@@ -1,6 +1,6 @@
 /*구글 폰트*/
 
-/*search bar가 globals보다 나중에 적용되도록 하여 검색바를 내림*/
+/*search bar가 globals보다 먼저 적용되도록 하여 검색바를 내림*/
 @import 'search-bar.css';
 
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&subset=korean');
@@ -10,3 +10,4 @@
 @import 'navigation.css';
 @import 'friends.css';
 @import 'chats.css';
+@import 'find.css';

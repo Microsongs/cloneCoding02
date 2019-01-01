@@ -1,0 +1,47 @@
+/*find의 회색 부분*/
+.find .find__options{
+    background-color:#eeeeee;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding-top:25px;
+    padding-bottom:15px;
+}
+
+/*각 find의 요소들*/
+.find__options .find__option{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    padding-left:30px;
+    padding-right:5px;
+    color:#523737;
+}
+
+/*각 find 요소의 그림과 글자 사이 간격*/
+.find__option i{
+    margin-bottom:15px;
+}
+
+/*find 요소읙 글자 크기*/
+.find__option span{
+    font-size:15px;
+}
+
+/*추천 친구*/
+.find__recommended header{
+    border-bottom: 1px solid #ebebeb;
+    padding:5px 10px;
+    font-size:12px;
+    color:#b4b4b4;
+}
+
+/*추천 친구 메세지*/
+.recommended__none{
+    padding:20px 0;
+    text-align:center;
+    border-top:1px solid #ebebeb;
+    color: #b4b4b4;
+    font-size:14px;
+}
