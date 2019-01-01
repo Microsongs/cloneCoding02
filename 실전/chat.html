@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <!--globals 클래스 미적용으로 인한 대체수단-->
-<body class="body">
-    <header class = "top-header">
+<body class="body" id="body-chat">
+    <header class = "top-header chat-header">
         <!--맨 윗부분 상태바-->
         <div class="header__top">
             <div class="header__column">
@@ -43,7 +43,7 @@
             </div>
             <div class="header__column">
                 <span class="header__text">
-                    Surface
+                    라이언
                 </span>
             </div>
             <div class="header__column">
@@ -56,13 +56,13 @@
     <main class="chat">
         <!-- date Divider = 날짜 분리선-->
         <div class="date-divider">
-            <span class="date-divider__text">Wednesday, Auguest</span>
+            <span class="date-divider__text">수요일, 8월</span>
         </div>
-        <div class="chat__message chat__message--from-me">
+        <div class="chat__message chat__message-from-me">
             <span class="chat__message-time">17:55</span>
             <span class="chat__message-body">안녕! 테스트 메세지야</span>
         </div>
-        <div class="chat__message chat__message--to-me">
+        <div class="chat__message chat__message-to-me">
             <img src="images/avatar.jpg" alt="" class="chat__message-avatar" height=100 width=100>
             <!-- 이름 자리 -->
             <div class="chat__message-center">
@@ -79,7 +79,7 @@
             <input type="text">
             <i class="far fa-smile"></i>
             <span class="record-message">
-                <i class="fas fa-microphone"></i>
+                <i class="fas fa-microphone fa-lg"></i>
             </span>
         </span>
     </div>
