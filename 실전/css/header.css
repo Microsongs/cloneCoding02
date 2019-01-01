@@ -1,5 +1,10 @@
 
 .top-header{
+    /*
+    2-8 니콜라스 답변 : Change the z-index of the header!
+    Do something like z-index:9; on the CSS of the header.
+    이므로 z-index 적용*/
+    z-index:9;  
     background-color:#523737;
     color:white;
     padding:5px 10px 15px 10px;
