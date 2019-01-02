@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+        /*트랜지션으로 무엇을 변경할 것인가*/
+        /*아래는 0.5초에 걸쳐 색상이 변경된다.*/
+        /*transition:all은 다같이 한번에 변경*/
+        /*
+        사용방법
+        transition: 항목 시간 ease-in-out;
+        */
+        transition: all 0.5s ease-in-out;
+      }
+      /*박스가 hover될 경우*/
+      /*트랜지션은 focus, active, hover일 때 잘 적용된다.*/
+      .box:hover {
+        background-color: red;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="box"> Text </span>
+  </body>
+</html>
