@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformation and Animation</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background: red;
+        animation: 5s scaleAndRotateSquare infinite ease-in-out;
+        /*
+        animation: 시간 키프레임명 ease-in-out;
+        infinite는 계속 반복하기 위해서
+        */
+      }
+      /*
+      @keyframes -> 애니메이션을 생성함을 알려줌
+      scaleAndRotateSquare -> 사용자정의 이름
+      */
+      @keyframes scaleAndRotateSquare {
+        from {
+          /*기본 상태*/
+          transform: none;
+        }
+        to {
+          /*변화될 상태*/
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+      }
+      @keyframes identifier {
+        /*
+        from to로 아무것도 없는 경우에서 시작시킬 수 있고,
+        %를 사용해서 구간을 나눌 수 있다.
+        */
+        0% {
+          /*아무것도 없는 상태에서*/
+          transform: none;
+        }
+        50% {
+          /*시작된 경우*/
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">li</div>
+  </body>
+</html>
