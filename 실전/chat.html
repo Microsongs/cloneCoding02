@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>채팅 방</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--아이콘 가져오기 = fontawesome 사용-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<!--globals 클래스 미적용으로 인한 대체수단-->
-<body class="body" id="body-chat">
-    <header class = "top-header chat-header">
-        <!--맨 윗부분 상태바-->
-        <div class="header__top">
-            <div class="header__column">
-                <!--plane icon 및 wifi incon-->
-                <i class="fas fa-plane"></i>
-                <i class="fas fa-wifi"></i>
-            </div>
-            <div class="header__column">
-                <span class="header__time">18:38</span>
-            </div>
-            <div class="header__column">
-                <!--moon icon-->
-                <!--bluetooth icon-->
-                <i class="far fa-moon"></i>
-                <i class="fab fa-bluetooth-b"></i>
-                <span class="header__battery">
-                 <!-- barrery icon-->
-                 66% 
-                 <i class="fas fa-battery-three-quarters"></i>
-                </span>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!--globals 클래스 미적용으로 인한 대체수단-->
+  <body class="body" id="body-chat">
+    <header class="top-header chat-header">
+      <!--맨 윗부분 상태바-->
+      <div class="header__top">
+        <div class="header__column">
+          <!--plane icon 및 wifi incon-->
+          <i class="fas fa-plane"></i> <i class="fas fa-wifi"></i>
         </div>
-        <!--카카오톡 맨 윗부분-->
-        <div class="header__bottom">
-            <div class="header__column">
-                <a href="chats.html">
-                    <i class="fas fa-chevron-left fa-lg"></i>
-                </a>
-            </div>
-            <div class="header__column">
-                <span class="header__text">
-                    라이언
-                </span>
-            </div>
-            <div class="header__column">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-bars"></i>
-            </div>
+        <div class="header__column">
+          <span class="header__time">18:38</span>
         </div>
+        <div class="header__column">
+          <!--moon icon-->
+          <!--bluetooth icon-->
+          <i class="far fa-moon"></i> <i class="fab fa-bluetooth-b"></i>
+          <span class="header__battery">
+            <!-- barrery icon-->
+            66% <i class="fas fa-battery-three-quarters"></i>
+          </span>
+        </div>
+      </div>
+      <!--카카오톡 맨 윗부분-->
+      <div class="header__bottom">
+        <div class="header__column">
+          <a href="chats.html"> <i class="fas fa-chevron-left fa-lg"></i> </a>
+        </div>
+        <div class="header__column">
+          <span class="header__text"> 라이언 </span>
+        </div>
+        <div class="header__column">
+          <i class="fas fa-search"></i> <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <main class="chat">
-        <!-- date Divider = 날짜 분리선-->
-        <div class="date-divider">
-            <span class="date-divider__text">수요일, 8월</span>
+      <!-- date Divider = 날짜 분리선-->
+      <div class="date-divider">
+        <span class="date-divider__text">수요일, 8월</span>
+      </div>
+      <div class="chat__message chat__message-from-me">
+        <span class="chat__message-time">17:55</span>
+        <span class="chat__message-body">안녕! 테스트 메세지야</span>
+      </div>
+      <div class="chat__message chat__message-to-me">
+        <img
+          src="images/avatar.jpg"
+          alt=""
+          class="chat__message-avatar"
+          height="100"
+          width="100"
+        />
+        <!-- 이름 자리 -->
+        <div class="chat__message-center">
+          <h3 class="chat__message-username">라이언</h3>
+          <span class="chat__message-body">이건 답변 메세지야</span>
         </div>
-        <div class="chat__message chat__message-from-me">
-            <span class="chat__message-time">17:55</span>
-            <span class="chat__message-body">안녕! 테스트 메세지야</span>
-        </div>
-        <div class="chat__message chat__message-to-me">
-            <img src="images/avatar.jpg" alt="" class="chat__message-avatar" height=100 width=100>
-            <!-- 이름 자리 -->
-            <div class="chat__message-center">
-                <h3 class="chat__message-username">라이언</h3>
-                <span class="chat__message-body">이건 답변 메세지야</span>
-            </div>
-            <span class="chat__message-time">19:35</span>
-        </div>
+        <span class="chat__message-time">19:35</span>
+      </div>
     </main>
 
     <div class="type-message">
-        <i class="fa fa-plus "></i>
-        <span class="type-message__input">
-            <input type="text">
-            <i class="far fa-smile"></i>
-            <span class="record-message">
-                <i class="fas fa-microphone fa-lg"></i>
-            </span>
+      <i class="fa fa-plus "></i>
+      <span class="type-message__input">
+        <input type="text" /> <i class="far fa-smile"></i>
+        <span class="record-message">
+          <i class="fas fa-microphone fa-lg"></i>
         </span>
+      </span>
     </div>
-
-</body>
+    <div class="bigScreenText"><span>화면을 작게 해주세요</span></div>
+  </body>
 </html>

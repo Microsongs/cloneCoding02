@@ -1,0 +1,13 @@
+/*530~700 사이*/
+/*
+@media screen and (min-width: 530px) and (max-width: 700px) {
+  .bigScreenText {
+    display: flex;
+  }
+}
+*/
+@media screen and (min-width: 530px) {
+  .bigScreenText {
+    display: flex;
+  }
+}
