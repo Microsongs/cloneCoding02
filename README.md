@@ -1,3 +1,2 @@
-# cloneCoding02
-
-Clone Coding ver2
+밖에는 실전파일
+이론은 폴더 내
